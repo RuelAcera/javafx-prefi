@@ -1,124 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Label text="0">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-         </children>
-      </HBox>
-      <HBox prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616; -fx-border-radius: 0;" text="7" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="8" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="310.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="9" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="460.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="+" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="410.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="CLEAR" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox layoutX="10.0" layoutY="110.0" prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616; -fx-border-radius: 0;" text="4" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="5" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="310.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="6" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="460.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="-" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="410.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="BCKSPC" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox layoutX="10.0" layoutY="162.0" prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="1" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="2" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="310.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="3" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="410.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="/" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="460.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="*" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox layoutX="10.0" layoutY="214.0" prefHeight="52.0" prefWidth="600.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="0" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="410.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="." textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button layoutX="410.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="100000.0" style="-fx-background-color: #161616;" text="=" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-   </children>
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="aclcbukidnon.com.javafxactivity.controllers.CalculatorController"
+      spacing="5" alignment="CENTER"
+      prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #2C3E50;">
+
+   <padding>
+      <Insets top="20" right="20" bottom="20" left="20"/>
+   </padding>
+
+   <!-- Display Area -->
+   <HBox alignment="CENTER_RIGHT" prefHeight="80.0">
+      <children>
+         <Label fx:id="display" text="0" textFill="white">
+            <font>
+               <Font name="Consolas Bold" size="48.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+
+   <!-- Button Grid -->
+   <GridPane hgap="5" vgap="5">
+      <columnConstraints>
+         <ColumnConstraints hgrow="ALWAYS"/>
+         <ColumnConstraints hgrow="ALWAYS"/>
+         <ColumnConstraints hgrow="ALWAYS"/>
+         <ColumnConstraints hgrow="ALWAYS"/>
+      </columnConstraints>
+
+      <rowConstraints>
+         <RowConstraints vgrow="ALWAYS"/>
+         <RowConstraints vgrow="ALWAYS"/>
+         <RowConstraints vgrow="ALWAYS"/>
+         <RowConstraints vgrow="ALWAYS"/>
+         <RowConstraints vgrow="ALWAYS"/>
+      </rowConstraints>
+
+      <!-- Row 1 -->
+      <children>
+         <Button text="7" onAction="#handleButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="8" onAction="#handleButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="9" onAction="#handleButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="+" onAction="#handleButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="0" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+
+         <!-- Row 2 -->
+         <Button text="4" onAction="#handleButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="1" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="5" onAction="#handleButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="6" onAction="#handleButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="1" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="-" onAction="#handleButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="1" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+
+         <!-- Row 3 -->
+         <Button text="1" onAction="#handleButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="2" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="2" onAction="#handleButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="3" onAction="#handleButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="2" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="*" onAction="#handleButtonClick" GridPane.columnIndex="3" GridPane.rowIndex="2" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+
+         <!-- Row 4 -->
+         <Button text="0" onAction="#handleButtonClick" GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="." onAction="#handleButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="/" onAction="#handleButtonClick" GridPane.columnIndex="2" GridPane.rowIndex="3" style="-fx-font-size: 24px; -fx-background-color: #34495E; -fx-text-fill: white;"/>
+         <Button text="=" onAction="#calculateResult" GridPane.columnIndex="3" GridPane.rowIndex="3" style="-fx-font-size: 24px; -fx-background-color: #2ECC71; -fx-text-fill: white;"/>
+
+         <!-- Row 5 -->
+         <Button text="CLEAR" onAction="#handleClear" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2" style="-fx-font-size: 24px; -fx-background-color: #E74C3C; -fx-text-fill: white;"/>
+         <Button text="BCKSPC" onAction="#handleBackspace" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.columnSpan="2" style="-fx-font-size: 24px; -fx-background-color: #E74C3C; -fx-text-fill: white;"/>
+      </children>
+   </GridPane>
 </VBox>

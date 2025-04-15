@@ -11,24 +11,17 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class SplashScreenController {
-
-
-    private Timer timer;
-
-    private Stage stage;
-
 
     @FXML
     public ProgressBar progressInitial;
 
+    private Stage stage; // Stage passed from Main
 
     @FXML
-    public void initialize(){
-        var timeline = new Timeline(
+    public void initialize() {
+        Timeline timeline = new Timeline(
                 new KeyFrame(Duration.ZERO, e -> progressInitial.setProgress(0)),
                 new KeyFrame(Duration.millis(200), e -> progressInitial.setProgress(0.1)),
                 new KeyFrame(Duration.millis(350), e -> progressInitial.setProgress(0.3)),
@@ -37,25 +30,22 @@ public class SplashScreenController {
                 new KeyFrame(Duration.millis(600), e -> progressInitial.setProgress(0.9)),
                 new KeyFrame(Duration.millis(1050), e -> progressInitial.setProgress(1.0))
         );
-        timeline.play();
+
         timeline.setOnFinished(_ -> onCompleted());
+        timeline.play();
     }
 
-    public void onCompleted () {
-        var dashboardFxml = new FXMLLoader(Main.class.getResource("dashboard-view.fxml"));
+    private void onCompleted() {
         try {
-            var scene = new Scene(dashboardFxml.load(), 800, 600);
-            System.out.println(stage.toString());
-            this.stage.setScene(scene);
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("dashboard-view.fxml"));
+            Scene scene = new Scene(loader.load(), 800, 600);
+            stage.setScene(scene);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
-
     public void setStage(Stage stage) {
-        System.out.println("Set Stage");
         this.stage = stage;
-        System.out.println(stage.toString());
     }
 }

@@ -1,28 +1,22 @@
 package aclcbukidnon.com.javafxactivity.controllers;
 
-
 import aclcbukidnon.com.javafxactivity.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
-import java.util.Objects;
 
 public class DashboardController {
-
 
     @FXML
     private BorderPane rootPane;
 
-
     @FXML
     public void initialize() {
-        loadPage("counter-view.fxml");
+        loadPage("counter-view.fxml"); // default page on load
     }
-
 
     @FXML
     protected void onTrafficLightClick() {
@@ -37,7 +31,6 @@ public class DashboardController {
     @FXML
     protected void onCalculatorClick() {
         loadPage("calculator-view.fxml");
-
     }
 
     @FXML
@@ -45,18 +38,12 @@ public class DashboardController {
         loadPage("todo-view.fxml");
     }
 
-
-    private void loadPage(String fxml) {
-
+    private void loadPage(String fxmlFile) {
         try {
-            var root = FXMLLoader.load(Main.class.getResource(fxml));
-            assert rootPane != null;
-            rootPane.setCenter((Node) root);
+            Node content = FXMLLoader.load(Main.class.getResource(fxmlFile));
+            rootPane.setCenter(content);
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // You can log this better if needed
         }
-
     }
-
-
 }
