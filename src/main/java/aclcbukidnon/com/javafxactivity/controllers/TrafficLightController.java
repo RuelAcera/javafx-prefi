@@ -42,6 +42,13 @@ public class TrafficLightController {
         timeline.play();
     }
 
+    @FXML
+    protected void onStopClick() {
+        timeline.stop();
+        currentColor = TrafficLightColor.STOP; // Optional: reset to red
+        updateLights();
+    }
+
     private void onTimerChange() {
         switch (currentColor) {
             case STOP -> currentColor = TrafficLightColor.HOLD;
