@@ -3,23 +3,36 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="30.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.CounterController">
-   <children>
-      <Button mnemonicParsing="false" onAction="#onMinusClick" prefHeight="156.0" prefWidth="118.0" style="-fx-background-color: #0f62fe;" text="-" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Button>
-      <Label fx:id="labelCount" text="0">
-         <font>
-            <Font size="78.0" />
-         </font>
-      </Label>
-      <Button layoutX="251.0" layoutY="132.0" mnemonicParsing="false" onAction="#onPlusClick" prefHeight="156.0" prefWidth="118.0" style="-fx-background-color: #0f62fe;" text="+" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Button>
-   </children>
-</HBox>
+<VBox xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="aclcbukidnon.com.javafxactivity.controllers.CounterController"
+      alignment="CENTER"
+      spacing="30"
+      prefWidth="600" prefHeight="400"
+      style="-fx-background-color: #f5f7fa;">
+
+   <padding>
+      <Insets top="30" left="30" right="30" bottom="30"/>
+   </padding>
+
+   <!-- Counter display -->
+   <Label fx:id="labelCount" text="0"
+          style="-fx-text-fill: #333; -fx-font-size: 72px; -fx-font-weight: bold;"/>
+
+   <!-- Buttons -->
+   <HBox spacing="20" alignment="CENTER">
+      <Button text="-"
+              onAction="#onMinusClick"
+              prefWidth="100" prefHeight="60"
+              style="-fx-background-color: #ff5757; -fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold; -fx-background-radius: 10;"/>
+
+      <Button text="+"
+              onAction="#onPlusClick"
+              prefWidth="100" prefHeight="60"
+              style="-fx-background-color: #0f62fe; -fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold; -fx-background-radius: 10;"/>
+   </HBox>
+
+</VBox>

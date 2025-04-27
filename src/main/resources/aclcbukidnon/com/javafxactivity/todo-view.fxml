@@ -3,23 +3,36 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="16.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController">
-   <children>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="16.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#onCreateClick" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: #0f62fe;" text="CREATE" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: #0f62fe;" text="DELETE" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <ListView fx:id="todoList" prefHeight="200.0" prefWidth="200.0" />
-   </children>
+<VBox xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController"
+      prefWidth="600.0" prefHeight="400.0"
+      alignment="TOP_CENTER"
+      spacing="20"
+      style="-fx-background-color: #f5f7fa;">
+
+   <padding>
+      <Insets top="30" left="30" right="30" bottom="30"/>
+   </padding>
+
+   <!-- Buttons -->
+   <HBox spacing="20" alignment="CENTER">
+      <Button text="CREATE"
+              onAction="#onCreateClick"
+              prefWidth="150" prefHeight="45"
+              style="-fx-background-color: #0f62fe; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10;"/>
+      <Button text="DELETE"
+              onAction="#onDeleteClick"
+              prefWidth="150" prefHeight="45"
+              style="-fx-background-color: #ff5757; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10;"/>
+   </HBox>
+
+   <!-- ListView -->
+   <ListView fx:id="todoList"
+             prefWidth="500" prefHeight="250"
+             style="-fx-background-color: white; -fx-border-color: #dcdfe6; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10;"/>
+
 </VBox>
